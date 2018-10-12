@@ -1,0 +1,7 @@
+{
+  "name": "api-workshop-companion",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
