@@ -1,14 +1,22 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      My Lists
     </ion-title>
+    <ion-buttons end>
+      <a ion-button icon-only (click)="logout()">
+        <ion-icon name="log-out"></ion-icon>
+      </a>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list>
+    <a *ngFor="let list of listCtrl.lists" (click)="getList(list._id)">
+      <ion-item>
+        {{ list.title }}
+      </ion-item>
+    </a>
+  </ion-list>
 </ion-content>

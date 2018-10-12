@@ -1,0 +1,17 @@
+page-login {
+
+  .form-width {
+    display: block;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  ion-content {
+    button {
+      &[type='submit'] {
+        position: absolute; left: -9999px; width: 1px; height: 1px;
+      }
+    }
+  }
+
+}
